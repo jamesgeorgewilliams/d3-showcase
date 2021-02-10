@@ -34,7 +34,7 @@
 
     svg
       .append("g")
-      .attr("stroke", "orange")
+      .attr("stroke", "#999")
       .selectAll("path")
       .data(cells)
       .join("path")
@@ -43,7 +43,7 @@
     svg
       .append("path")
       .attr("fill", "none")
-      .attr("stroke", "#ccc")
+      .attr("stroke", "#0b2830")
       .attr("d", voronoi.render());
 
     svg.append("path").attr("d", delaunay.renderPoints(null, 2));
@@ -78,7 +78,7 @@
 
 <div class="cell">
   <div>
-    <h2>Voronoi Diagram</h2>
+    <h3>Voronoi Diagram</h3>
     <p>The area of each cell determines whether the label is visible.</p>
   </div>
   <div id="voronoi" />
@@ -88,13 +88,10 @@
   .cell {
     margin-top: 5rem;
   }
-  h2 {
-    color: #333;
+  h3 {
     text-align: center;
-    font-weight: 100;
   }
   p {
-    color: #333;
     text-align: center;
     font-weight: 300;
     margin-bottom: 5rem;

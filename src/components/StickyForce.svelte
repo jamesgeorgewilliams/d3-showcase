@@ -51,7 +51,7 @@
       .data(graph.nodes)
       .join("circle")
       .attr("r", 12)
-      .attr("fill", "cornflowerblue")
+      .attr("fill", "#0b2830")
       .classed("node", true)
       .classed("fixed", (d) => d.fx !== undefined);
 
@@ -101,7 +101,7 @@
 
 <div class="force">
   <div>
-    <h2>Network data graph</h2>
+    <h3>Network data graph</h3>
     <p>
       Click and drag nodes out of position. Click the node again to make it
       return to the original position.
@@ -114,13 +114,10 @@
   .force {
     margin-top: 10rem;
   }
-  h2 {
-    color: #333;
+  h3 {
     text-align: center;
-    font-weight: 100;
   }
   p {
-    color: #333;
     text-align: center;
     font-weight: 300;
   }

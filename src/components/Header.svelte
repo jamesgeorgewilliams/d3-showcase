@@ -2,15 +2,14 @@
 </script>
 
 <div>
-  <h1>D3.js Showcase</h1>
+  <h1>D3.js visuals</h1>
 </div>
 
 <style>
   h1 {
-    color: #ff3e00;
-    text-transform: uppercase;
+    color: #d0c0da;
     text-align: center;
     font-size: 4em;
-    font-weight: 100;
+    font-weight: 600;
   }
 </style>

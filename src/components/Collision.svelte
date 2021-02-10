@@ -26,7 +26,7 @@
         context.moveTo(d.x + d.r, d.y);
         context.arc(d.x, d.y, d.r, 0, 2 * Math.PI);
       }
-      context.fillStyle = "lightblue";
+      context.fillStyle = "#999";
       context.fill();
       context.strokeStyle = "#333";
       context.stroke();
@@ -70,7 +70,6 @@
   }
 
   .collision__left p {
-    color: #333;
     font-weight: 300;
   }
 

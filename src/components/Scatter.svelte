@@ -144,9 +144,13 @@
             .attr("x1", margin.left)
             .attr("x2", width - margin.right)
         );
+    // const color = d3.scaleOrdinal(
+    //   data.map((d) => d.category),
+    //   d3.schemeCategory10
+    // );
     const color = d3.scaleOrdinal(
       data.map((d) => d.category),
-      d3.schemeCategory10
+      ["#999", "#d0c0da", "#0b2830"]
     );
 
     const shape = d3.scaleOrdinal(
@@ -176,7 +180,7 @@
 
 <div class="graph">
   <div>
-    <h2>Scatter Plot</h2>
+    <h3>Scatter Plot</h3>
     <p>Relationship between width and length of three species.</p>
   </div>
   <div id="scatter" />
@@ -186,13 +190,10 @@
   .graph {
     margin-top: 10rem;
   }
-  h2 {
-    color: #333;
+  h3 {
     text-align: center;
-    font-weight: 100;
   }
   p {
-    color: #333;
     text-align: center;
     font-weight: 300;
     margin-bottom: 2rem;
